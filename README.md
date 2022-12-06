@@ -33,12 +33,10 @@ Options:
 For inference, you should run either the Flask app or the docker: <br>
 - Flask:
 ```commandline
-python ./app/app.py [ARGUMENTS] [OPTIONS]
-
-Arguments:
-    --model_dir     Path to directory where the trained model is saved
+python ./app/app.py [OPTIONS]
 
 Options:
+    --model_dir     Path to directory where the trained model is saved
     --lang_model    Type of language model to use for tokenization. Must correspond to the one used in the training phase
 ```
 
