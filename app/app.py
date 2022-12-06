@@ -46,7 +46,8 @@ def predict():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Application for text sentiment prediction")
-    parser.add_argument("--model_dir", type=str, help="Path to directory where the trained model is saved")
+    parser.add_argument("--model_dir", type=str, default="model/trained_model.pt",
+                        help="Path to directory where the trained model is saved")
     parser.add_argument("--lang_model", type=str, default="bert-base-uncased",
                         help="Type of language model to use for tokenization. Must correspond to the one used in the training phase")
     args = parser.parse_args()
